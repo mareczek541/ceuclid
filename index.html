@@ -14,6 +14,7 @@
             --orange: #f7943e;
             --light-text: #f0f0f0;
             --card-bg: #2a435f;
+            --darker-blue: #14283e;
         }
 
         /* General styles */
@@ -29,6 +30,11 @@
             max-width: 960px;
             margin: 0 auto;
             padding: 0 20px;
+        }
+        
+        h2 {
+           font-size: 2.5em;
+           margin-bottom: 40px;
         }
 
         /* Hero Section */
@@ -77,11 +83,6 @@
             padding: 60px 20px;
             background-color: var(--card-bg);
         }
-        
-        .features h2 {
-            font-size: 2.5em;
-            margin-bottom: 40px;
-        }
 
         .features-grid {
             display: flex;
@@ -95,12 +96,57 @@
             padding: 30px;
             border-radius: 10px;
             flex-basis: 320px;
+            text-align: left;
         }
 
         .feature-card h3 {
             font-size: 1.5em;
             color: var(--orange);
             margin-top: 0;
+        }
+
+        /* Commands Section */
+        .commands {
+            padding: 60px 20px;
+        }
+
+        .commands-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            text-align: left;
+        }
+        
+        .command-card {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .command-card code {
+            background-color: var(--dark-blue);
+            padding: 5px 8px;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            color: var(--orange);
+            font-size: 1.1em;
+        }
+
+        .command-card p {
+            margin-top: 10px;
+            font-size: 0.95em;
+            color: var(--light-text);
+        }
+
+        /* Final CTA Section */
+        .cta {
+            background-color: var(--darker-blue);
+            padding: 60px 20px;
+        }
+
+        .cta h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
         }
 
         /* Footer */
@@ -136,17 +182,48 @@
 
         <section class="features">
             <div class="container">
-                <h2>What can cEuclid do?</h2>
+                <h2>Core Features</h2>
                 <div class="features-grid">
                     <div class="feature-card">
                         <h3>Advanced Counting</h3>
-                        <p>Keep your counting channel in order, track leaderboards, and compete with friends for the highest score!</p>
+                        <p>Keep your counting channel in order, track leaderboards, and compete with friends for the highest score! Our system prevents cheating and keeps the fun fair.</p>
                     </div>
                     <div class="feature-card">
                         <h3>Games & Entertainment</h3>
-                        <p>Bored of counting? Play one of our games to relax and earn points.</p>
+                        <p>Bored of counting? Play one of our unique games to relax and earn points. New games are added regularly to keep things fresh!</p>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="commands">
+            <div class="container">
+                <h2>Key Commands</h2>
+                <div class="commands-grid">
+                    <div class="command-card">
+                        <code>/help</code>
+                        <p>Shows a full list of all available commands.</p>
+                    </div>
+                    <div class="command-card">
+                        <code>/count</code>
+                        <p>Checks the current number in the counting channel.</p>
+                    </div>
+                    <div class="command-card">
+                        <code>/leaderboard</code>
+                        <p>Displays the top counters on the server.</p>
+                    </div>
+                    <div class="command-card">
+                        <code>/games</code>
+                        <p>Shows a list of all playable games.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <h2>Ready to Play?</h2>
+                <a href="https://discord.com/oauth2/authorize?client_id=1386866278081237102&permissions=8&integration_type=0&scope=bot" class="button">Add cEuclid to Your Server</a>
             </div>
         </section>
     </main>
