@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cEuclid - Your Discord Bot for Games & Counting</title>
+    <style>
+        /* Import font from Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        /* Color definitions from the logo */
+        :root {
+            --dark-blue: #1a324d;
+            --orange: #f7943e;
+            --light-text: #f0f0f0;
+            --card-bg: #2a435f;
+        }
+
+        /* General styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: var(--dark-blue);
+            color: var(--light-text);
+            text-align: center;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 80px 20px 60px 20px;
+        }
+
+        .hero img.logo {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            color: white;
+            margin: 10px 0;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+
+        /* Buttons */
+        .button {
+            display: inline-block;
+            background-color: var(--orange);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+            background-color: #ffad66;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 60px 20px;
+            background-color: var(--card-bg);
+        }
+        
+        .features h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+
+        .features-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .feature-card {
+            background-color: var(--dark-blue);
+            padding: 30px;
+            border-radius: 10px;
+            flex-basis: 320px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5em;
+            color: var(--orange);
+            margin-top: 0;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 20px;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: var(--orange);
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <img src="logo.png" alt="cEuclid Logo" class="logo">
+                <h1>cEuclid</h1>
+                <p>
+                    More than just numbers! I'm cEuclid, here for counting challenges and fun games. Wanna play?
+                </p>
+                <a href="https://discord.com/oauth2/authorize?client_id=1386866278081237102&permissions=8&integration_type=0&scope=bot" class="button">Add to Your Server</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>What can cEuclid do?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>Advanced Counting</h3>
+                        <p>Keep your counting channel in order, track leaderboards, and compete with friends for the highest score!</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Games & Entertainment</h3>
+                        <p>Bored of counting? Play one of our games to relax and earn points.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 cEuclid. | <a href="https://discord.gg/URmNYjsMsC">Join the Support Server</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
